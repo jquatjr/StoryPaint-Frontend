@@ -37,12 +37,14 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 			setIsLoading(true)
 			const imgs = await getBooks(bookName)
 			svgsRef.current = imgs
+			console.log(imgs)
 			
 			setIsLoading(false)
 		}
 		getSvgs()
 	}, [bookName])
 	if(isLoading) return <h1>Loading</h1>
+	
 	return (
 		<>
 		<Box className = "flipbook-container"sx={{ paddingTop: '5rem' }}>
@@ -72,7 +74,7 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 			>
 				{svgsRef.current.map((page) => 
 					{
-					
+					console.log(page.path, page)
 					return (
 					<Box
 						key={page.path}
@@ -97,7 +99,7 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 		<Box className="SVG-mobile-view">
 		{svgsRef.current.map((page) => 
 				{
-				
+				console.log(page)
 				return (
 				<Box
 					key={page.path}
@@ -106,7 +108,7 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 					<SVG
 						text={page.text}
 						pageClass={page.className}
-						bookName={bookName}
+						bookName={page.book_name}
 						name={page.path.slice(2).slice(0, -4)}
 						currentColor={currentColor}
 					/>

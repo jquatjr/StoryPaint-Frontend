@@ -114,7 +114,7 @@ export default function LandingPage() {
                   <img class="img-thumbnail" src={Will} alt="WillSanders" />
                   <h5 class="card-title">Full Stack Developer</h5>
                   <p class="card-text">
-                    ************************
+                    Will comes from a background in hospitality management where he led 
                   </p>
                 </div>
                 <div class="card-footer bg-dark bg-opacity-25">

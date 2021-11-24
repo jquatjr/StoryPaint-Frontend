@@ -2,7 +2,6 @@ import {InputLabel, MenuItem, FormHelperText, FormControl, Select} from '@mui/ma
 
 export default function PictureSelect({book, setBook,  availableBooks}){
     const handleChange = (e) => {
-        console.log(e.target.value)
         setBook(e.target.value)
     }
 

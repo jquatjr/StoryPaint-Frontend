@@ -75,7 +75,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `jquatjr`, `Mintbean`, `JQuatJr`, `jquatjr`, `johnqtd`, `jquatjr@gmail.com`, `StoryPaint`, `StoryPaint is a coloring book application.`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -193,7 +192,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-John Quattrocchi Jr - [@jquatjr](https://twitter.com/johnqtd) - jquatjr@gmail.com
+William Sanders - [@jquatjr](https://twitter.com/iamwillsanders) - jquatjr@gmail.com
 
 Project Link: [https://github.com/jquatjr/Mintbean](https://github.com/jquatjr/Mintbean)
 

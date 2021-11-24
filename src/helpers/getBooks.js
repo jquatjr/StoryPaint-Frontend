@@ -26,7 +26,6 @@ const GMText = [
 // const className = ((i + 1) % 2 ) === 0 ? "left" : "right"
 
 export function getBooks(bookName) {
-  console.log(bookName)
   if (bookName === "Random") {
     const Randomsvgs = require.context(
       `../assets/images/Random`,

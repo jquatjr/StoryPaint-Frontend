@@ -27,21 +27,21 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jquatjr/Mintbean">
+  <a href="https://github.com/Wsanders81/StoryPaint-Frontend">
     <img src="./images/StoryPaint2.png" alt="Logo" width="200">
   </a>
 
   <p align="center">
     StoryPaint is a coloring book application.
     <br />
-    <a href="https://github.com/jquatjr/Mintbean"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Wsanders81/StoryPaint-Frontend"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jquatjr/Mintbean">View Demo</a>
+    <a href="https://storypaint.surge.sh/">View Demo</a>
     ·
-    <a href="https://github.com/jquatjr/Mintbean/issues">Report Bug</a>
+    <a href="https://github.com/Wsanders81/StoryPaint-Frontend/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jquatjr/Mintbean/issues">Request Feature</a>
+    <a href="https://github.com/Wsanders81/StoryPaint-Frontend/issues">Request Feature</a>
   </p>
 </div>
 
@@ -181,20 +181,18 @@ Don't forget to give the project a star! Thanks again!
 
 
 <!-- LICENSE -->
-## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
 <!-- CONTACT -->
 ## Contact
 
-William Sanders - [@jquatjr](https://twitter.com/iamwillsanders) - jquatjr@gmail.com
+William Sanders - [Portfolio site](https://www.willsanders.dev) - williamsanders81@gmail.com
 
-Project Link: [https://github.com/jquatjr/Mintbean](https://github.com/jquatjr/Mintbean)
+Project Link ( Frontend ): [https://github.com/Williamsanders81/StoryPaint-Frontend](https://github.com/Williamsanders81/StoryPaint-Frontend)
+
+Project Link ( Backend ): [https://github.com/Williamsanders81/StoryPaint](https://github.com/Williamsanders81/StoryPaint)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -203,24 +201,24 @@ Project Link: [https://github.com/jquatjr/Mintbean](https://github.com/jquatjr/M
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [William Sanders](https://www.linkedin.com/in/williamsanders81/)
 * [Matthew Dillon](https://www.linkedin.com/in/coderdill/)
+* [John Quattrocchi](https://www.linkedin.com/in/jquatjr/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/jquatjr/Mintbean.svg?style=for-the-badge
-[contributors-url]: https://github.com/jquatjr/Mintbean/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jquatjr/Mintbean.svg?style=for-the-badge
-[forks-url]: https://github.com/jquatjr/Mintbean/network/members
-[stars-shield]: https://img.shields.io/github/stars/jquatjr/Mintbean.svg?style=for-the-badge
-[stars-url]: https://github.com/jquatjr/Mintbean/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jquatjr/Mintbean.svg?style=for-the-badge
-[issues-url]: https://github.com/jquatjr/Mintbean/issues
-[license-shield]: https://img.shields.io/github/license/jquatjr/Mintbean.svg?style=for-the-badge
-[license-url]: https://github.com/jquatjr/Mintbean/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Wsanders81/StoryPaint-Frontend.svg?style=for-the-badge
+[contributors-url]: https://github.com/Wsanders81/StoryPaint-Frontend/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Wsanders81/StoryPaint-Frontend.svg?style=for-the-badge
+[forks-url]: https://github.com/Wsanders81/StoryPaint-Frontend/network/members
+[stars-shield]: https://img.shields.io/github/stars/Wsanders81/StoryPaint-Frontend.svg?style=for-the-badge
+[stars-url]: https://github.com/Wsanders81/StoryPaint-Frontend/stargazerss
+[issues-shield]: https://img.shields.io/github/issues/Wsanders81/StoryPaint-Frontend.svg?style=for-the-badge
+[issues-url]: https://github.com/Wsanders81/StoryPaint-Frontend/issues
+[license-shield]: https://img.shields.io/github/license/Wsanders81/StoryPaint-Frontend.svg?style=for-the-badge
+[license-url]: https://github.com/Wsanders81/StoryPaint-Frontend/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/jquatjr
+[linkedin-url]: https://linkedin.com/in/williamsanders81/
 [product-screenshot]: images/screenshot.png

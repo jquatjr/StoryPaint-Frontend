@@ -117,11 +117,11 @@ This is an example of how to list things you need to use the software and how to
 1. Clone the frontend repo
   
    ```sh
-   git clone https://github.com/Wsanders81/StoryPaint-Frontend
+   git clone https://github.com/jquatjr/StoryPaint-Frontend
    ```
 2. Clone the backend repo
 3. ```sh
-   git clone https://github.com/Wsanders81/StoryPaint
+   git clone https://github.com/jquatjr/StoryPaint
    ```
 4. Install NPM packages in both frontend and backend folder
    ```sh

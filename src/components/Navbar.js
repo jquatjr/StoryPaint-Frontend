@@ -31,8 +31,8 @@ export default function Navbar({ toggleLogin, toggleRegister, notify }) {
 			<Typography onClick={logout} sx={{ marginRight: '1rem' }} className="Navbar-link">
 				Logout
 			</Typography>
-			<Typography className="Navbar-link" sx={{ marginRight: '1rem' }} onClick={()=> navigate('/color')} >Coloring Page</Typography>
-			<Typography onClick={()=> navigate('/my-pictures')} className="Navbar-link">My Pictures</Typography>
+			<Typography className="Navbar-link" sx={{ marginRight: '1rem' }} onClick={() => navigate('/color')} >Coloring Page</Typography>
+			<Typography onClick={() => navigate('/my-pictures')} className="Navbar-link">My Pictures</Typography>
 		</Box>
 	);
 	return (
@@ -46,7 +46,7 @@ export default function Navbar({ toggleLogin, toggleRegister, notify }) {
 						variant="h6"
 						component="div"
 					>
-						<img alt="logo" className="Navbar-logo" src={logo} /> 
+						<img alt="logo" className="Navbar-logo" src={logo} />
 					</Typography>
 					{user ? logoutButtons : loginButtons}
 				</Toolbar>

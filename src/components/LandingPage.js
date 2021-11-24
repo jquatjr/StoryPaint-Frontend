@@ -114,7 +114,11 @@ export default function LandingPage() {
                   <img class="img-thumbnail" src={Will} alt="WillSanders" />
                   <h5 class="card-title">Full Stack Developer</h5>
                   <p class="card-text">
-                    ************************
+                    Will is a full stack software developer pivoting into the tech indrustry from
+                    hospitality management. He has always had a passion for technology and is
+                    currently completing his final capstone project at Springboard SEC. He
+                    continues to enhance his development skills through collaboration with
+                    other developers and working on side projects.
                   </p>
                 </div>
                 <div class="card-footer bg-dark bg-opacity-25">

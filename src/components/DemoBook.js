@@ -15,16 +15,9 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 	const svgs = useSelector(store => store.coloringReducer)
 	const svgsRef = useRef();
 	const [isLoading, setIsLoading] = useState(true)
-<<<<<<< HEAD
-
 	const postColorings = async () => {
 		if (!Object.keys(svgs).length) {
 			alert("Color something first!")
-=======
-	const postColorings = async() => {
-		if(!Object.keys(svgs).length){ 
-		alert("Color something first!")
->>>>>>> 27b9f4abaa18fbbd8474f2f613ed65064a06bffc
 		}
 		const keys = Object.keys(svgs)
 		const res = keys.forEach(async (key) => {
@@ -52,31 +45,56 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 	if (isLoading) return <h1>Loading</h1>
 	return (
 		<>
-		<Box className = "flipbook-container"sx={{ paddingTop: '5rem' }}>
-			<Button
-				variant="contained"
-				sx={{ margin: '1rem 2rem 1rem 0', padding: '1rem' }}
-				onClick={() => book.current.pageFlip().flipPrev()}
-			>
-				Prev Page
-			</Button>
-			<Button
-				variant="contained"
-				sx={{ margin: '1rem 2rem 1rem 0', padding: '1rem' }}
-				onClick={() => book.current.pageFlip().flipNext()}
-			>
-				Next Page
-			</Button>
-			<HTMLFlipBook
-				className="flipbook"
-				style={{ margin: 'auto' }}
-				ref={book}
-				useMouseEvents={false}
-				maxShadowOpacity={0.5}
-				height={150}
-				width={150}
-				size='stretch'
-			>
+			<Box className="flipbook-container" sx={{ paddingTop: '5rem' }}>
+				<Button
+					variant="contained"
+					sx={{ margin: '1rem 2rem 1rem 0', padding: '1rem' }}
+					onClick={() => book.current.pageFlip().flipPrev()}
+				>
+					Prev Page
+				</Button>
+				<Button
+					variant="contained"
+					sx={{ margin: '1rem 2rem 1rem 0', padding: '1rem' }}
+					onClick={() => book.current.pageFlip().flipNext()}
+				>
+					Next Page
+				</Button>
+				<HTMLFlipBook
+					className="flipbook"
+					style={{ margin: 'auto' }}
+					ref={book}
+					useMouseEvents={false}
+					maxShadowOpacity={0.5}
+					height={150}
+					width={150}
+					size='stretch'
+				>
+					{svgsRef.current.map((page) => {
+
+						return (
+							<Box
+								key={page.path}
+								data-density="soft"
+							>
+								<SVG
+									text={page.text}
+									pageClass={page.className}
+									bookName={bookName}
+									name={page.path.slice(2).slice(0, -4)}
+									currentColor={currentColor}
+								/>
+							</Box>
+						)
+					}
+					)}
+				</HTMLFlipBook>
+
+				{/* <Box className="SVG-save">
+			{user ? <Button  onClick={postColorings} sx={{marginTop:"4rem"}} variant="contained">Save Book</Button> : null}
+			</Box> */}
+			</Box>
+			<Box className="SVG-mobile-view">
 				{svgsRef.current.map((page) => {
 
 					return (
@@ -95,41 +113,10 @@ const DemoBook = ({ currentColor, bookName, notify }) => {
 					)
 				}
 				)}
-			</HTMLFlipBook>
-<<<<<<< HEAD
+			</Box>
 			<Box className="SVG-save">
 				{user ? <Button onClick={postColorings} sx={{ marginTop: "4rem" }} variant="contained">Save Book</Button> : null}
 			</Box>
-=======
-			
-			{/* <Box className="SVG-save">
-			{user ? <Button  onClick={postColorings} sx={{marginTop:"4rem"}} variant="contained">Save Book</Button> : null}
-			</Box> */}
-		</Box>
-		<Box className="SVG-mobile-view">
-		{svgsRef.current.map((page) => 
-				{
-				
-				return (
-				<Box
-					key={page.path}
-					data-density="soft"
-				>
-					<SVG
-						text={page.text}
-						pageClass={page.className}
-						bookName={bookName}
-						name={page.path.slice(2).slice(0, -4)}
-						currentColor={currentColor}
-					/>
-				</Box>
-				)}
-			)}
-		</Box>
-		<Box className="SVG-save">
-		{user ? <Button  onClick={postColorings} sx={{marginTop:"4rem"}} variant="contained">Save Book</Button> : null}
->>>>>>> 27b9f4abaa18fbbd8474f2f613ed65064a06bffc
-		</Box>
 		</>
 	);
 };

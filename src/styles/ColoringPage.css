@@ -1,5 +1,39 @@
 .ColoringPage-sketch {
     padding-left: 4rem;
-    padding-bottom: 0.5rem;   
+    padding-bottom: 0.5rem;
+     
+    height: 100%; 
+    width: 100%; 
+    margin: 0; 
+    padding: 0;   
+}
+.ColoringPage-color-picker {
+    margin: auto; 
+    width: 75%; 
+    padding: 1rem; 
+    border-radius: 5px; 
 }
 
+.ColoringPage-book-container {
+    width: 90%; 
+    margin: auto; 
+    height: 100%; 
+}
+body {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url("../assets/images/photo-1516383607781-913a19294fd1.jpg") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover; 
+}
+
+ @media screen and (max-width: 769px) {
+     .ColoringPage-sketch{
+         padding-left: 2.5rem; 
+     }
+     .ColoringPage-color-picker {
+         width: 100vw; 
+     }
+ }

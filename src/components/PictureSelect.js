@@ -8,7 +8,7 @@ export default function PictureSelect({book, setBook,  availableBooks}){
 
     return (
         <div>
-        <FormControl sx={{ m: 1, minWidth: 120 }}>
+        <FormControl sx={{ m: 1, width: "20rem" }}>
           <InputLabel id="book-label">Book</InputLabel>
           <Select
             labelId="book-label"

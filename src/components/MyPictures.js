@@ -6,7 +6,7 @@ import {
 	deleteColoringFromAPI
 } from '../actions/actions';
 import { useNavigate } from 'react-router-dom';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Tooltip } from '@mui/material';
 import * as saveSvgAsPng from 'save-svg-as-png';
 export default function MyPictures() {
 	const userId = useSelector((store) => store.userReducer.id);
@@ -38,9 +38,8 @@ export default function MyPictures() {
 	);
 
 	const handleClick = (e) => {
-		const div = e.target.closest('div');
-		const childDiv = div.firstChild;
-		const svg = childDiv.firstChild;
+		const div = document.querySelector('.MyPictures-svg')
+		const svg = div.firstChild;
 		const name = svg.dataset.name;
 		saveSvgAsPng.saveSvg(svg, name);
 	};
@@ -54,21 +53,39 @@ export default function MyPictures() {
 		<Box className="MyPictures">
 			{svgs.current ? (
 				svgs.current.map((el) => (
-					<Box>
+					<Box className="MyPictures-svg-container" key={el.id}>
 						<div
 							className="MyPictures-svg"
 							dangerouslySetInnerHTML={{ __html: el.image }}
 						/>
-						<Button onClick={handleClick} variant="contained">
-							Download
-						</Button>
-						<Button
-							data-id={el.id}
-							onClick={handleDelete}
-							variant="contained"
-						>
-							Delete
-						</Button>
+						<Box sx={{ paddingTop: '2rem' }}>
+							<Button
+								sx={{
+									marginRight: '1rem',
+									position: 'absolute',
+									bottom: '0',
+									left: '2rem'
+								}}
+								className="MyPictures-button"
+								onClick={handleClick}
+								variant="contained"
+							>
+								Download
+							</Button>
+							<Button
+								sx={{
+									position: 'absolute',
+									bottom: '0',
+									right: '2rem'
+								}}
+								data-id={el.id}
+								onClick={handleDelete}
+								variant="contained"
+								color="error"
+							>
+								Delete
+							</Button>
+						</Box>
 					</Box>
 				))
 			) : null}

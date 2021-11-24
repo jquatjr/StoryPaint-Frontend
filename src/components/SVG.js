@@ -40,12 +40,10 @@ const SVG = ({
 						
 						const namedImport = goodnightMoon[name]
 						ImportedIconRef.current = namedImport.default
-						console.log(namedImport.default)
 						handleToggle()
 					} else {
 					const namedImport = await import(`../assets/images/${bookName}/${name}.svg`);
 					ImportedIconRef.current = namedImport.default;
-					console.log(namedImport.default)
 					}
 				} catch (err) {
 					throw err;
@@ -68,26 +66,20 @@ const SVG = ({
 			<>
 			<Box className={`SVG-${pageClass}`} >
 				<svg
+					
 					onClick={handleClick}
 					ref={svgRef}
 					data-name={name}
 					id="my-svg"
 					className="SVG"
 					data-src={`${ImportedIconRef.current}`}
-					width="90%"
-					height="90%"
+					width="85%"
+					height="85%"
 				/>
 				<p className="SVG-text">{text}</p>
+				
 			</Box>
-			<Box sx={{display:"flex", justifyContent:"space-evenly"}}>
-				<Button
-					variant="contained"
-					onClick={() =>
-						saveSvgAsPng.saveSvg(svgRef.current, filename)}
-				>
-				Download
-				</Button>
-			</Box>
+			
 					</>
 		) : null;
 	}

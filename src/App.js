@@ -30,6 +30,7 @@ function App() {
     position: toast.POSITION.TOP_CENTER
   })
   const notifyRegisterSuccess = (username) => toast.success(`Welcome, ${username}!`)
+  const notifySaveBookSuccess = () => toast.success('Your pictures have been saved!')
 	return (
 		<div className="App">
       <ToastContainer/>
@@ -48,7 +49,7 @@ function App() {
 					<RegistrationForm toggle={toggleRegisterModal} notify={notifyRegisterSuccess} />
 				</div>
 			</Modal>
-			<UserRoutes />
+			<UserRoutes notify={notifySaveBookSuccess} />
 		</div>
 	);
 }

@@ -8,12 +8,14 @@ const goodnightMoon_blank = require('../assets/images/GoonightMoon/goodnightMoon
 const goodnightMoon_cover = require('../assets/images/GoonightMoon/goodnightMoon_cover.svg')
 const goodnightMoon_page1 = require('../assets/images/GoonightMoon/goodnightMoon_page1.svg')
 const goodnightMoon_page2 = require('../assets/images/GoonightMoon/goodnightMoon_page2.svg')
+
 const goodnightMoon = {
 	goodnightMoon_blank: goodnightMoon_blank,
 	goodnightMoon_cover: goodnightMoon_cover, 
 	goodnightMoon_page1: goodnightMoon_page1, 
 	goodnightMoon_page2: goodnightMoon_page2, 
 }
+
 const SVG = ({
 	name,
 	currentColor, 
@@ -21,7 +23,6 @@ const SVG = ({
 	text, 
 	pageClass
 }) => {
-	
 	const dispatch = useDispatch()
 	const svgRef = useRef(null);
 	const filename = 'mycreation.svg';
@@ -38,10 +39,16 @@ const SVG = ({
 				try {
 					if(bookName === "goodnightMoon"){
 						
+						
+						ImportedIconRef.current = null; 
 						const namedImport = goodnightMoon[name]
+						if(!namedImport) return
 						ImportedIconRef.current = namedImport.default
 						handleToggle()
+
+						
 					} else {
+					ImportedIconRef.current = null; 
 					const namedImport = await import(`../assets/images/${bookName}/${name}.svg`);
 					ImportedIconRef.current = namedImport.default;
 					}

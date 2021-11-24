@@ -44,6 +44,7 @@ export function getBooks(bookName) {
         path: RandomArr[i].path,
         text: RandomText[i],
         className: className,
+        book_name: "Random"
       });
     }
     return Random;
@@ -61,6 +62,7 @@ export function getBooks(bookName) {
         path: PeppaArr[i].path,
         text: PeppaText[i],
         className: className,
+        book_name: "Peppa"
       });
     }
     return Peppa;
@@ -78,6 +80,7 @@ export function getBooks(bookName) {
         path: GMArr[i].path,
         text: GMText[i],
         className: className,
+        book_name: "goodnightMoon"
       });
     }
     

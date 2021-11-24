@@ -83,12 +83,12 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-* #### Front End
+  #### Front End
 * [React.js](https://reactjs.org/)
 * [Material.Ui](https://mui.com/)
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* #### Back End
+#### Back End
 * [Node.js](https://nodejs.org/)
 * [Express.js](https://expressjs.com/)
 * [Node-postgres](https://node-postgres.com/)
@@ -114,17 +114,28 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Clone the repo
+1. Clone the frontend repo
+  
    ```sh
-   git clone https://github.com/jquatjr/Mintbean.git
+   git clone https://github.com/Wsanders81/StoryPaint-Frontend
    ```
-2. Install NPM packages
+2. Clone the backend repo
+3. ```sh
+   git clone https://github.com/Wsanders81/StoryPaint
+   ```
+4. Install NPM packages in both frontend and backend folder
    ```sh
+   cd [frontend_folder]
+   npm install
+   cd [backend_folder]
    npm install
    ```
-3. Start server & client
+5. Start up server and backend separately
    ```sh
-   npm run server-with-client
+   cd [backend_folder]
+   node server.js
+   cd [frontend_folder]
+   npm start
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -134,7 +145,6 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 ### Examples:
 

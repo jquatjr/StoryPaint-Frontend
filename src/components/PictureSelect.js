@@ -19,7 +19,7 @@ export default function PictureSelect({book, setBook,  availableBooks}){
           >
             {availableBooks.map(pic => <MenuItem key={pic} value={pic}>{pic}</MenuItem>)}
           </Select>
-          <FormHelperText>Choose a Book</FormHelperText>
+          <FormHelperText><b>Choose a Book</b></FormHelperText>
         </FormControl>
         
       </div> 

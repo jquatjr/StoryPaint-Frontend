@@ -19,7 +19,7 @@
     margin: auto; 
     height: 100%; 
 }
-/* body {
+body {
     height: 100vh;
     background: 
     url("../assets/images/photo-1516383607781-913a19294fd1.jpg") no-repeat center center fixed;
@@ -27,7 +27,7 @@
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover; 
-} */
+}
 
 #book {
     background-color: white;

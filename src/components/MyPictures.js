@@ -37,9 +37,11 @@ export default function MyPictures() {
 		[ userId, isLoading ]
 	);
 
-	const handleClick = (e) => {
-		const div = document.querySelector('.MyPictures-svg')
+	const handleClick = (e, id) => {
+		const div = document.body.querySelector(`.MyPictures-svg[data-id="${id}"]`)
+		
 		const svg = div.firstChild;
+		console.log(svg)
 		const name = svg.dataset.name;
 		saveSvgAsPng.saveSvg(svg, name);
 	};
@@ -53,9 +55,10 @@ export default function MyPictures() {
 		<Box className="MyPictures">
 			{svgs.current ? (
 				svgs.current.map((el) => (
-					<Box className="MyPictures-svg-container" key={el.id}>
+					<Box className="MyPictures-svg-container"   key={el.id}>
 						<div
 							className="MyPictures-svg"
+							data-id={el.id}
 							dangerouslySetInnerHTML={{ __html: el.image }}
 						/>
 						<Box sx={{ paddingTop: '2rem' }}>
@@ -67,7 +70,7 @@ export default function MyPictures() {
 									left: '2rem'
 								}}
 								className="MyPictures-button"
-								onClick={handleClick}
+								onClick={(e)=>handleClick(e,el.id)}
 								variant="contained"
 							>
 								Download
